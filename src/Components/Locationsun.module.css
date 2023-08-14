@@ -1,0 +1,26 @@
+.locationcontain {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.locationandtime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.locationtext {
+  font-weight: 500;
+}
+.locationtext span {
+  font-size: 14px;
+}
+.datetext {
+  font-weight: 300;
+  font-size: 12px;
+}
+.timetext {
+  font-weight: 500;
+  font-size: 14px;
+}

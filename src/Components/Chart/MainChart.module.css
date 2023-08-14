@@ -1,0 +1,134 @@
+.mainChartcontainer {
+  width: 100%;
+  background-color: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.chartheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.selectcontain {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  font-size: 12px !important;
+}
+
+.selectcontain select {
+  padding: 5px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 10px;
+  font-size: 14px !important;
+}
+.selectcontain div {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #ddd;
+  font-size: 12px !important;
+  padding: 5px;
+  border-radius: 10px;
+}
+.selectcontain div span {
+  font-size: 14px;
+}
+.areaChart {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+
+  /* Dimensions */
+  width: 95%;
+  max-width: 100%;
+  height: 60px;
+
+  /* Layout */
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: row;
+}
+ul.areaChart,
+ol.areaChart {
+  list-style: none;
+}
+.areaChart > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  border-bottom: 1px solid #000;
+
+  /* Color */
+  /* background: red; */
+}
+/* .areaChart > * {
+  clip-path: polygon(
+    0% calc(100% * (1 - var(--start))),
+    100% calc(100% * (1 - var(--end))),
+    100% 100%,
+    0% 100%
+  );
+} */
+.bar > li {
+  height: 50px;
+  background: #5c9ce5;
+  clip-path: polygon(
+    0% calc(100% * (1 - var(--start))),
+    100% calc(100% * (1 - var(--end))),
+    100% 100%,
+    0% 100%
+  );
+  margin-top: 0px;
+  border-bottom: 1px solid #000;
+}
+.bar {
+  /* border-left: 0.5px solid #000; */
+  border-right: 0.5px solid #000;
+  border-bottom: none;
+  position: relative;
+}
+.firstbar {
+  border-left: 0.5px solid #000;
+}
+.templist {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 5px;
+}
+.templist > li {
+  /* width: 50px; */
+  /* background-color: pink; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+}
+.templist > li > span {
+  font-size: 12px !important;
+}
+
+.rainprelist {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  margin: 0 0px 0 11px;
+}
+.rainprelist > * {
+  list-style: none;
+  color: #ccc;
+  font-size: 12px;
+}

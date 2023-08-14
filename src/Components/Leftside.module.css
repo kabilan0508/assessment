@@ -1,0 +1,172 @@
+.leftcontainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 30px;
+  gap: 60px;
+  color: #fff;
+  background: url("../assets/sunrise-removebg-preview.png");
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-position-x: -205px;
+  background-position-y: 136px; */
+  /* background-origin: padding-box; */
+  background-position: bottom;
+}
+
+.short {
+  /* background-color: red; */
+  height: fit-content;
+  /* margin: 30px; */
+
+  /* padding: 30px; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plusiconcontainer {
+  padding: 3px;
+  /* height: fit-content;
+      width: fit-content; */
+  /* display: inline; */
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plusicon {
+  color: #5c9ce5;
+  font-size: 10px;
+  display: inline-block;
+}
+
+.dots {
+  /* background-color: blue; */
+  align-items: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  /* margin: auto 2px; */
+}
+.dot.active {
+  width: 12px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.switchcontiner {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  font-size: 8px;
+  color: #fff;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 10px;
+  /* background-color: red; */
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  /* top: 2px; */
+  /* left: 2px; */
+  /* transform: translate(0, -50%); */
+  /* left: 2px; */
+  /* bottom: 1.5px; */
+  border: none;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  scale: 2;
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(6px);
+  -ms-transform: translateX(6px);
+  transform: translateX(6px);
+}
+.currenttemperature {
+  display: flex;
+  width: 100%;
+  /* background-color: red; */
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.currenttemperature p {
+  font-size: 60px;
+}
+.weather span {
+  font-size: 14px;
+}
+.weather label {
+  font-size: 14px;
+  display: inline-block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.leftarrow,
+.rightarrow {
+  position: absolute;
+}
+.leftarrow {
+  left: 0;
+}
+.rightarrow {
+  right: 0;
+}
